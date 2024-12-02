@@ -15,7 +15,6 @@ const preguntas = [
     }
 ];
 
-
 const inquirerMenu = async () => {
     console.clear();
     console.log('=========================='.green);
@@ -24,7 +23,6 @@ const inquirerMenu = async () => {
     const { opcion } = await inquirer.prompt(preguntas);
     return opcion;
 }
-
 
 const pausa = async () => {
     const question = [
@@ -37,7 +35,6 @@ const pausa = async () => {
     console.log('\n');
     await inquirer.prompt(question);
 }
-
 
 const leerInput = async (message) => {
     const question = [
@@ -54,6 +51,7 @@ const leerInput = async (message) => {
     const { desc } = await inquirer.prompt(question);
     return desc;
 }
+
 
 
 const listarLugares = async (lugares = []) => {
